@@ -1,0 +1,10 @@
+<div class="todo-input">
+  <div class="unchecked"></div>
+  <input
+    #textInput="ngModel"
+    type="text"
+    [(ngModel)]="textValue"
+    placeholder="Create a new todo..."
+    (keydown.enter)="addTodo(); textInput.reset()"
+  />
+</div>

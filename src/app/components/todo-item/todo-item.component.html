@@ -1,0 +1,29 @@
+<div
+  (mouseenter)="showDelete = true"
+  (mouseleave)="showDelete = false"
+  class="todo-item"
+>
+  <div
+    class="checked"
+    *ngIf="todoItem?.completed"
+    (click)="changeCompleteStatus(todoItem!.id, 'unchecked')"
+  >
+    <img src="assets/images/icon-check.svg" alt="check" />
+  </div>
+  <div
+    class="unchecked"
+    *ngIf="!todoItem?.completed"
+    (click)="changeCompleteStatus(todoItem!.id, 'checked')"
+  ></div>
+  <p [ngClass]="{ '-completed': todoItem?.completed }">{{ todoItem!.text }}</p>
+  <div class="delete">
+    <ng-container *ngIf="!todoItem!.completed">
+      <img
+        *ngIf="showDelete"
+        (click)="deleteSelectedItem(todoItem!.id)"
+        src="assets/images/icon-cross.svg"
+        alt="delete"
+      />
+    </ng-container>
+  </div>
+</div>

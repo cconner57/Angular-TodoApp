@@ -1,0 +1,47 @@
+.todo-item {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid hsl(236, 33%, 92%);
+  img,
+  div {
+    width: 24px;
+    height: 24px;
+  }
+  .checked {
+    background: linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
+    border-radius: 50%;
+    img {
+      width: 18px;
+      margin: 0 3px;
+      cursor: pointer;
+    }
+  }
+  .unchecked {
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid hsl(236, 33%, 92%);
+  }
+  p {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    color: #494c6b;
+    margin-left: 24px;
+    width: 100%;
+  }
+  .-completed {
+    text-decoration-line: line-through;
+    color: hsl(233, 11%, 84%);
+  }
+  .delete {
+    width: 16px;
+    img {
+      cursor: pointer;
+      width: 16px;
+    }
+  }
+}

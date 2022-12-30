@@ -1,0 +1,30 @@
+.todo-input {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  display: flex;
+  margin-bottom: 24px;
+  padding: 15px 24px;
+  width: 540px;
+  .unchecked {
+    height: 24px;
+    margin-right: 19px;
+    width: 24px;
+    border-radius: 50%;
+    border: 1px solid hsl(236, 33%, 92%);
+  }
+  input[type="text"] {
+    color: #9495a5;
+    font-family: "Josefin Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+    line-height: 18px;
+    height: 30px;
+    width: 100%;
+    padding-left: 5px;
+    color: #494c6b;
+  }
+}

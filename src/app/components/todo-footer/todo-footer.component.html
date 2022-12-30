@@ -1,0 +1,28 @@
+<div class="footer">
+  <div class="footer__count">
+    <p>{{ todoCount }} items left</p>
+  </div>
+  <div class="footer__options">
+    <p
+      [class.selected]="selectedList === 'All'"
+      (click)="changeSelectedItems('All')"
+    >
+      All
+    </p>
+    <p
+      [class.selected]="selectedList === 'Active'"
+      (click)="changeSelectedItems('Active')"
+    >
+      Active
+    </p>
+    <p
+      [class.selected]="selectedList === 'Completed'"
+      (click)="changeSelectedItems('Completed')"
+    >
+      Completed
+    </p>
+  </div>
+  <div class="footer__clear">
+    <p *ngIf="selectedList !== 'Active'" (click)="clearCompletedItems()">Clear Completed</p>
+  </div>
+</div>

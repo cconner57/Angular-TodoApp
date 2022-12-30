@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 24px;
+  &__count {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.194444px;
+    color: #9495a5;
+    width: 70px;
+  }
+  &__options {
+    display: flex;
+    width: 166px;
+    justify-content: space-between;
+    p {
+      font-family: "Josefin Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: -0.194444px;
+      color: #9495a5;
+      cursor: pointer;
+    }
+    p.selected {
+      color: hsl(220, 98%, 61%);
+    }
+  }
+  &__clear {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.194444px;
+    color: #9495a5;
+    cursor: pointer;
+    width: 105px;
+  }
+}
